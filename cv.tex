@@ -27,7 +27,13 @@
 
 \usepackage{fontspec} % For loading fonts
 \defaultfontfeatures{Mapping=tex-text}
-\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin} % Main document font
+\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin-SmallCaps} % Main document font
+
+
+\usepackage[a4paper,bindingoffset=0.2in,%
+            left=0.1in,right=1in,top=0.1in,bottom=0.1in,%
+            footskip=.25in]{geometry}
+
 
 \usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
 
@@ -58,10 +64,10 @@
 
 \section{Personal Data}
 
-\begin{tabular}{rl}
-  \textsc{Email} & \href{fjaviersaezm@gmail.com}{fjaviersaezm@gmail.com}\\ 
-  \textsc{GitHub} & \href{https://github.com/fjsaezm}{https://github.com/fjsaezm}\\ 
-  \textsc{LinkedIn} & \href{https://www.linkedin.com/in/fjaviersaezm/}{https://www.linkedin.com/in/fjaviersaezm/}
+\begin{tabular}{ll}
+  \textsc{Email} & \href{mailto:fjaviersaem@gmail.com}{\texttt{fjaviersaezm@gmail.com}} \\
+   \textsc{GitHub} &  {\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin-Regular}\href{https://github.com/fjsaezm}{https://github.com/fjsaezm}}\\ 
+  \textsc{LinkedIn} & {\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin-Regular}\href{https://www.linkedin.com/in/fjaviersaezm/}{https://www.linkedin.com/in/fjaviersaezm/}}
 \end{tabular}\\
 
 
@@ -71,12 +77,12 @@
 
 \section{Education}
 
-\begin{tabular}{r|p{11cm}}	
-  \textsc{2015-2021}  & Double Bachelor Degree in \textsc{Computer Science} and \textsc{Mathematics}
-  \\ & \textbf{University of Granada}.\\
-& Specialized in \textsc{Intelligent Systems and Artificial Intelligence}
+\begin{tabular}{lp{7cm}l}
+  \textsc{2015-2021}
+  & \textsc{Bachelor Degree in Computer Science}   & \textsc{Bachelor Degree in Mathematics}\\
+  & \footnotesize \textbf{University of Granada}, Spain     & \footnotesize \textbf{University of Granada}, Spain\\\
+  & \footnotesize Specialized in Machine Learning. &  \\
 \end{tabular}\\
-
 %----------------------------------------------------------------------------------------
 %	SCHOLARSHIPS AND ADDITIONAL INFO
 %----------------------------------------------------------------------------------------
@@ -84,23 +90,40 @@
 \section{Projects and Memberships}
 
 \begin{tabular}{p{3cm}|p{11cm}}
-  \textsc{Metaheuristics} & Used genetic algorithms and basic metaheuristics to solve a classification problem. \href{https://github.com/fjsaezm/MH}{https://github.com/fjsaezm/MH}\\ \\
-
-  \textsc{Convolutional Neural Networks} & Adapted \textsc{Mask R-CNN} in \emph{python} to get instance segmentation in own database. \href{[https://github.com/fjsaezm/mask-rcnn-in-openimages-subset}{[https://github.com/fjsaezm/mask-rcnn-in-openimages-subset}\\ \\
-
-      \textsc{Finance Tracker} & Simple \emph{Magic: The  gathering} personal card stock manager and web info getter for finantial purposes. \href{https://github.com/fjsaezm/cardStock}{https://github.com/fjsaezm/cardStock}\\ \\
-
-      \textsc{Membership} & \textsc{LibreIM} \\
-      & Nonprofit student organization dedicated to creating notes for several Comp-Sci and Maths subjects. I've collaborated taking notes on Algebra, Geometry and Statistics.
-    \href{https://github.com/libreim}{https://github.com/libreim}\\ \\
+  \textsc{Metaheuristics}                & \textsc{Feature Weight Learning}                                                                                                                                                                                                           \\
+                                         & \footnotesize Used genetic algorithms and basic metaheuristics to solve a classification problem. \href{https://github.com/fjsaezm/MH}{https://github.com/fjsaezm/MH}                                                                    \\
 
 
-    \textsc{Competitions} & \textsc{Hash Code 2020} \\ 
-    & Team based competition. Ranked 1422 globally. \\ 
-    & \textsc{Tuenti challenge 2020} \\ 
-    & Individual challenge where you try to solve as many problems as you can in a week. Ranked 211.
+  \multicolumn{2}{c}{}                                                                                                                                                                                                                                                                \\
 
-\end{tabular}
+  \textsc{Deep Learning} & \textsc{Instance segmentation using Convolutional Neural Network} \\
+                                         & \footnotesize Adapted Mask R-CNN in python to obtain instance segmentation in own database. \href{https://github.com/fjsaezm/mask-rcnn-in-openimages-subset}{https://github.com/fjsaezm/mask-rcnn-in-openimages-subset} \\
+
+
+  \multicolumn{2}{c}{}                                                                                                                                                                                                                                                                \\
+  \textsc{Membership}                    & \textsc{LibreIM}                                                                                                                                                                                                                           \\
+                                         & \footnotesize Nonprofit student organization dedicated to creating notes for several Comp-Sci and Maths subjects. I've collaborated taking notes on Algebra, Geometry and Statistics.
+  \href{https://github.com/libreim}{https://github.com/libreim}                                                                                                                                                                                                                       \\
+
+  \multicolumn{2}{c}{}                                                                                                                                                                                                                                                                \\
+  \textsc{Competitions}                  & \textsc{Hash Code 2020}                                                                                                                                                                                                                    \\
+                                         & \footnotesize Team based competition. Ranked 1422 globally.                                                                                                                                                                             \\
+                                         & \textsc{Tuenti challenge 2020}                                                                                                                                                                                                             \\
+                                         & \footnotesize Individual challenge where you try to solve as many problems as you can in a week. Ranked 211.
+\end{tabular}\\
+
+%----------------------------------------------------------------------------------------
+%	Experience
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\begin{tabular}{r|p{11cm}}	
+  \textsc{Jun 2020-Dec 2020}  & \textsc{Machine Learning Internship at Input For You} \\
+  & \footnotesize Worked in Computer Vision  and used different Convolutional Neural Networks to solve different kinds of problems.
+\end{tabular}\\
+
+
 
 %----------------------------------------------------------------------------------------
 %	LANGUAGES
@@ -109,9 +132,11 @@
 \section{Languages}
 
 \begin{tabular}{rl}
-\textsc{English:} & Fluent\\
-
 \textsc{Spanish:} & Mothertongue\\
+\textsc{English:} & Fluent - Cambridge Certificate in Advanced English (CAE) - October 2020\\
+\textsc{French:} & Basic knowledge\\
+
+
 \end{tabular}\\
 
 %----------------------------------------------------------------------------------------
@@ -121,21 +146,21 @@
 \section{Computer Skills}
 
 \begin{tabular}{rl}
-Basic Knowledge: & \textsc{Java}, \textsc{Ruby}, \textsc{C}, \textsc{R}, \textsc{SQL}, \textsc{html}, \textsc{Android}\\
+Advanced Knowledge : & \textsc{Python},{\fb \LaTeX}\setmainfont[SmallCapsFont=Fontin SmallCaps]{Fontin-Regular},\textsc{Git}, \textsc{OpenCV}\\
 
-Intermediate/Advanced Knowledge: & \textsc{Python},\LaTeX, \textsc{C++}, \textsc{Git}, \textsc{Linux}\\
+Intermediate Knowledge: &  \textsc{C++},  \textsc{Linux} , \textsc{Keras}, \textsc{Java}\\
+
+Basic Knowledge: & \textsc{Ruby}, \textsc{C/C\#}, \textsc{R}, \textsc{SQL}, \textsc{HTML}, \textsc{Android}\\
 
 
-\end{tabular}
+\end{tabular}\\
 
 %----------------------------------------------------------------------------------------
 %	INTERESTS AND ACTIVITIES
 %----------------------------------------------------------------------------------------
 
-\section{Personal}
+\section{Interests}
 
-Volunteered many times with different kinds of assotiations.\\
-I have been an active member of the \textsc{University student comitee}\\
-Interested in Open-Source, Machine Learning, Computer Vision, Data Science
+Open source,Statistics,Machine Learning, Deep Learning, Computer Vision, Volunteering, Visualization Techniques, Unsupervised Learning
 
 \end{document}
